@@ -1,0 +1,14 @@
+com\models\Room.class
+com\services\UserImpl.class
+com\services\FeedbackImpl.class
+com\interfaces\IRoom.class
+com\mycompany\eam_project\resources\JavaEE8Resource.class
+com\services\RoomImpl.class
+com\models\RoomService.class
+com\services\RoomServiceImpl.class
+com\interfaces\IFeedback.class
+com\models\User.class
+com\interfaces\IRoomService.class
+com\models\Feedback.class
+com\interfaces\IUser.class
+com\mycompany\eam_project\JAXRSConfiguration.class

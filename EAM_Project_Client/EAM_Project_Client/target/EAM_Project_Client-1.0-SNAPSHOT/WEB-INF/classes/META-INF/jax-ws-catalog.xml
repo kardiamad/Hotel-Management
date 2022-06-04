@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/EAM_Project/CustomerImplService?wsdl" uri="wsdl/localhost_8080/EAM_Project/CustomerImplService.wsdl"/>
+    <system systemId="http://localhost:8080/EAM_Project/RoomImplService?wsdl" uri="wsdl/localhost_8080/EAM_Project/RoomImplService.wsdl"/>
+    <system systemId="http://localhost:8080/EAM_Project/RoomServiceImplService?wsdl" uri="wsdl/localhost_8080/EAM_Project/RoomServiceImplService.wsdl"/>
+    <system systemId="http://localhost:8080/EAM_Project/FeedbackImplService?wsdl" uri="wsdl/localhost_8080/EAM_Project/FeedbackImplService.wsdl"/>
+    <system systemId="http://localhost:8080/EAM_Project/FeedbackImplService?wsdl=1" uri="wsdl/localhost_8080/EAM_Project/FeedbackImplService.wsdl_1.wsdl"/>
+    <system systemId="http://localhost:8080/EAM_Project/FeedbackImplService?xsd=1" uri="wsdl/localhost_8080/EAM_Project/FeedbackImplService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/EAM_Project/RoomServiceImplService?WSDL" uri="wsdl/localhost_8080/EAM_Project/RoomServiceImplService.wsdl"/>
+    <system systemId="http://localhost:8080/EAM_Project/RoomServiceImplService?wsdl=1" uri="wsdl/localhost_8080/EAM_Project/RoomServiceImplService.wsdl_1.wsdl"/>
+    <system systemId="http://localhost:8080/EAM_Project/RoomServiceImplService?xsd=1" uri="wsdl/localhost_8080/EAM_Project/RoomServiceImplService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/EAM_Project/RoomImplService?WSDL" uri="wsdl/localhost_8080/EAM_Project/RoomImplService.wsdl"/>
+    <system systemId="http://localhost:8080/EAM_Project/RoomImplService?wsdl=1" uri="wsdl/localhost_8080/EAM_Project/RoomImplService.wsdl_1.wsdl"/>
+    <system systemId="http://localhost:8080/EAM_Project/RoomImplService?xsd=1" uri="wsdl/localhost_8080/EAM_Project/RoomImplService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/EAM_Project/CustomerImplService?WSDL" uri="wsdl/localhost_8080/EAM_Project/CustomerImplService.wsdl"/>
+    <system systemId="http://localhost:8080/EAM_Project/CustomerImplService?wsdl=1" uri="wsdl/localhost_8080/EAM_Project/CustomerImplService.wsdl_1.wsdl"/>
+    <system systemId="http://localhost:8080/EAM_Project/CustomerImplService?xsd=1" uri="wsdl/localhost_8080/EAM_Project/CustomerImplService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/EAM_Project/UserImplService?WSDL" uri="wsdl/localhost_8080/EAM_Project/UserImplService.wsdl"/>
+    <system systemId="http://localhost:8080/EAM_Project/UserImplService?wsdl=1" uri="wsdl/localhost_8080/EAM_Project/UserImplService.wsdl_1.wsdl"/>
+    <system systemId="http://localhost:8080/EAM_Project/UserImplService?xsd=1" uri="wsdl/localhost_8080/EAM_Project/UserImplService.xsd_1.xsd"/>
+</catalog>

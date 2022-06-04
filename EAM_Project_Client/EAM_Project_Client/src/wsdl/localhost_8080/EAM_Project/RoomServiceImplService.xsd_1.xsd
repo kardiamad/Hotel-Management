@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.3 (RELEASE-2.4.3-ad3323c; 2019-01-21T17:46:06+0000) JAXWS-RI/2.3.2 JAXWS-API/2.3.2 JAXB-RI/2.3.2 JAXB-API/2.3.2 git-revision#unknown. --><xs:schema xmlns:tns="http://interfaces.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://interfaces.com/">
+
+<xs:element name="addRoomServices" type="tns:addRoomServices"/>
+
+<xs:element name="addRoomServicesResponse" type="tns:addRoomServicesResponse"/>
+
+<xs:element name="approveRoomServices" type="tns:approveRoomServices"/>
+
+<xs:element name="approveRoomServicesResponse" type="tns:approveRoomServicesResponse"/>
+
+<xs:element name="getRoomServices" type="tns:getRoomServices"/>
+
+<xs:element name="getRoomServicesByRoomNumber" type="tns:getRoomServicesByRoomNumber"/>
+
+<xs:element name="getRoomServicesByRoomNumberResponse" type="tns:getRoomServicesByRoomNumberResponse"/>
+
+<xs:element name="getRoomServicesResponse" type="tns:getRoomServicesResponse"/>
+
+<xs:element name="removeRoomServicesForVacantRoom" type="tns:removeRoomServicesForVacantRoom"/>
+
+<xs:element name="removeRoomServicesForVacantRoomResponse" type="tns:removeRoomServicesForVacantRoomResponse"/>
+
+<xs:element name="updateRoomServices" type="tns:updateRoomServices"/>
+
+<xs:element name="updateRoomServicesResponse" type="tns:updateRoomServicesResponse"/>
+
+<xs:complexType name="getRoomServicesByRoomNumber">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRoomServicesByRoomNumberResponse">
+<xs:sequence>
+<xs:element name="room_number" type="tns:roomService" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="roomService">
+<xs:sequence>
+<xs:element name="approved" type="xs:string" minOccurs="0"/>
+<xs:element name="flower" type="xs:int"/>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="room_number" type="xs:int"/>
+<xs:element name="scent" type="xs:string" minOccurs="0"/>
+<xs:element name="towel" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeRoomServicesForVacantRoom">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeRoomServicesForVacantRoomResponse">
+<xs:sequence>
+<xs:element name="room_number" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addRoomServices">
+<xs:sequence>
+<xs:element name="arg0" type="tns:roomService" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addRoomServicesResponse">
+<xs:sequence>
+<xs:element name="room_number" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateRoomServices">
+<xs:sequence>
+<xs:element name="arg0" type="tns:roomService" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateRoomServicesResponse">
+<xs:sequence>
+<xs:element name="room_number" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="approveRoomServices">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="approveRoomServicesResponse">
+<xs:sequence>
+<xs:element name="room_number" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRoomServices">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getRoomServicesResponse">
+<xs:sequence>
+<xs:element name="room_services" type="tns:roomService" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.3 (RELEASE-2.4.3-ad3323c; 2019-01-21T17:46:06+0000) JAXWS-RI/2.3.2 JAXWS-API/2.3.2 JAXB-RI/2.3.2 JAXB-API/2.3.2 git-revision#unknown. --><xs:schema xmlns:tns="http://interfaces.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://interfaces.com/">
+
+<xs:element name="getRoomByNumber" type="tns:getRoomByNumber"/>
+
+<xs:element name="getRoomByNumberResponse" type="tns:getRoomByNumberResponse"/>
+
+<xs:element name="getRooms" type="tns:getRooms"/>
+
+<xs:element name="getRoomsByUserId" type="tns:getRoomsByUserId"/>
+
+<xs:element name="getRoomsByUserIdResponse" type="tns:getRoomsByUserIdResponse"/>
+
+<xs:element name="getRoomsResponse" type="tns:getRoomsResponse"/>
+
+<xs:element name="getVacantRooms" type="tns:getVacantRooms"/>
+
+<xs:element name="getVacantRoomsResponse" type="tns:getVacantRoomsResponse"/>
+
+<xs:element name="updateRoom" type="tns:updateRoom"/>
+
+<xs:element name="updateRoomResponse" type="tns:updateRoomResponse"/>
+
+<xs:element name="updateRoomServiceStatus" type="tns:updateRoomServiceStatus"/>
+
+<xs:element name="updateRoomServiceStatusResponse" type="tns:updateRoomServiceStatusResponse"/>
+
+<xs:complexType name="getRooms">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getRoomsResponse">
+<xs:sequence>
+<xs:element name="rooms" type="tns:room" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="room">
+<xs:sequence>
+<xs:element name="additionalServices" type="xs:string" minOccurs="0"/>
+<xs:element name="bathroom" type="xs:int"/>
+<xs:element name="bedroom" type="xs:int"/>
+<xs:element name="number" type="xs:int"/>
+<xs:element name="phone" type="xs:string" minOccurs="0"/>
+<xs:element name="tv" type="xs:int"/>
+<xs:element name="user_FName" type="xs:string" minOccurs="0"/>
+<xs:element name="user_LName" type="xs:string" minOccurs="0"/>
+<xs:element name="user_email" type="xs:string" minOccurs="0"/>
+<xs:element name="user_id" type="xs:int"/>
+<xs:element name="user_phone" type="xs:string" minOccurs="0"/>
+<xs:element name="vacant" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateRoom">
+<xs:sequence>
+<xs:element name="arg0" type="tns:room" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateRoomResponse">
+<xs:sequence>
+<xs:element name="room" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateRoomServiceStatus">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateRoomServiceStatusResponse">
+<xs:sequence>
+<xs:element name="room" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRoomByNumber">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRoomByNumberResponse">
+<xs:sequence>
+<xs:element name="room" type="tns:room" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRoomsByUserId">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRoomsByUserIdResponse">
+<xs:sequence>
+<xs:element name="rooms" type="tns:room" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getVacantRooms">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getVacantRoomsResponse">
+<xs:sequence>
+<xs:element name="rooms" type="tns:room" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
